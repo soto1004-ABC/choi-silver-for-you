@@ -1,0 +1,25 @@
+name: 질문 게시판
+description: 게임, 조작, 버그에 관한 질문을 남겨주세요.
+title: '질문: '
+body:
+  - type: markdown
+    attributes:
+      value: '폭팔은 예술이다 질문 게시판입니다. 플랫폼과 게임 버전을 함께 적어주세요.'
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 플랫폼
+      options:
+        - GBA
+        - PC
+        - Android APK
+        - 기타
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 질문 내용
+      description: 궁금한 점이나 문제가 생긴 상황을 적어주세요.
+    validations:
+      required: true
