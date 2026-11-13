@@ -1,0 +1,24 @@
+name: 질문 게시판
+description: 폭팔은 예술이다 질문과 문제를 남겨주세요.
+title: "질문: "
+labels: [질문]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 플랫폼
+      options:
+        - GBA
+        - PC
+        - Android APK
+        - 기타
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 질문 내용
+      description: 궁금한 점이나 문제가 생긴 상황을 적어주세요.
+      placeholder: 게임 버전과 상황을 함께 적어주세요.
+    validations:
+      required: true
